@@ -89,7 +89,7 @@ def rss():
         articles[f] = (data['title'], data['date'], data['slug'])
     title = "Quentin Fan-Chiang's Blog"
     description = "Sometimes I may write some stuff here"
-    copyright = "@ 2020 Quentin Fan-Chiang"
+    copyright = "@ 2021 Quentin Fan-Chiang"
     for i in range(len(articles)):
         articles[i] = {
             'title': articles[i][0],
