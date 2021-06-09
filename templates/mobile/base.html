@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='code_blocks.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename="mobile.css") }}">
         <meta charset="UTF-8">
-        <meta name="author" content="Quentin Fan-Chiang">
-        <meta itemprop="name" content="{{ title }}">
-        <meta prefix="og: http://ogp.me/ns#" property="og:title" content="{{ title }}">
-        <meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://quentinfanchiang.dev/blog/">
         <title>{{ title }} - Quentin Fan-Chiang</title>
         <style>
             @import url("https://use.typekit.net/rjh1tmg.css");
@@ -39,13 +34,7 @@
         </div>
 
         <div class="main">
-            <div class="main">
-                <article>
-                    <h1>{{ title }}</h1><hr>
-                    {{ toc|safe }}
-                    {{ content|safe }}
-                </article>
-            </div>
+            {{ content|safe }}
         </div>
 
         <script>
